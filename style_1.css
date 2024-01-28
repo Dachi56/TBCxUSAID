@@ -1,0 +1,396 @@
+/* General*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  list-style: 1;
+  font-weight: 400;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 140rem;
+  padding: 0 15%;
+  margin: 0 auto;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: #131212f5;
+
+  width: 100%;
+  height: 9.6rem;
+  padding: 0 15%;
+  margin: 0;
+
+  position: fixed;
+  z-index: 100;
+}
+
+/* NAVIGATION */
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #fff;
+  transition: all 0.3sec;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: #00adee;
+}
+
+.nav-main:link,
+.nav-main:visited {
+  color: #00adee;
+}
+
+/* SECTION MAIN TITLE */
+
+.background-image {
+  background-image: url("https://static.wixstatic.com/media/93e8a3_9fa23196ddf6427a9da574e2b31a13d2~mv2.jpg/v1/fill/w_980,h_352,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/93e8a3_9fa23196ddf6427a9da574e2b31a13d2~mv2.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  max-width: 100%;
+  height: 450px;
+  margin: 9.6rem 0 0 0;
+}
+
+.image-text {
+  color: #fff;
+  font-size: 2.5rem;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.image-text h2 {
+  margin-top: 1.2rem;
+}
+
+/* SECTION DESCRIPITON */
+
+.description {
+  background-color: #0c0b0bdf;
+  padding: 4.8rem 0;
+}
+
+.description-text {
+  font-size: 3rem;
+  line-height: 1.8;
+}
+
+.description-link:visited,
+.description-link:link {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: #00adee;
+  transition: all 0.3sec;
+  margin: 2.4rem 0;
+}
+
+.description-link:hover,
+.description-link:active {
+  color: #aeaaaa;
+}
+
+/* SECTION OTHER COURSES */
+
+.courses {
+  background-color: #161616;
+  padding-bottom: 4.8rem;
+}
+
+.courses-text {
+  padding: 3.2rem 0 4.8rem 0;
+}
+
+.courses-heading {
+  font-size: 2.8rem;
+  color: #dbdbdb;
+}
+
+.courses-content {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.courses-card {
+  border: 1px solid rgba(85, 85, 85, 1);
+  border-radius: 6px;
+}
+
+.course-card-text {
+  color: #f4f4f4;
+  padding: 2.4rem;
+}
+
+.course-card-name {
+  font-size: 1.8rem;
+}
+
+.course-card-registration {
+  font-size: 1.4rem;
+  padding-top: 1.6rem;
+}
+
+.course-card-link:link,
+.course-card-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #00aeef;
+  margin-top: 11rem;
+}
+
+.course-card-link:hover,
+.course-card-link:active {
+  color: #00aeee8b;
+}
+
+/* SECTION PARTNERS AND SLIDER */
+
+.partners {
+  background-color: #2b2b2b;
+}
+
+.partners h1 {
+  font-size: 2.4rem;
+  color: #f4f4f4;
+  padding: 2.4rem 0;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  padding: 4.8rem 0;
+  margin: 0 -15%;
+}
+
+.slider-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  flex: 1 0 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.arrow:hover {
+  opacity: 1;
+}
+
+.left-arrow {
+  left: 20px;
+}
+
+.right-arrow {
+  right: 20px;
+}
+
+/* SECTION QUESTIONS */
+
+.oftenly-asked-questions {
+  background-color: #161616;
+  padding: 6.4rem 20%;
+}
+
+.questions-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2.4rem 0;
+}
+
+.questions-heading-text {
+  font-size: 2.4rem;
+  color: #f4f4f4;
+}
+
+.questions-heading-link:link,
+.questions-heading-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #00aef3;
+}
+
+.questions-heading-link:hover,
+.questions-heading-link:active {
+  color: #aaaaaa;
+}
+
+.questions {
+  margin-bottom: 2rem;
+}
+
+.question {
+  position: relative;
+}
+
+.show-answer-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.answer {
+  display: none;
+  margin-top: 10px;
+  font-size: 1.4rem;
+  color: #f4f4f4;
+}
+
+.answer.visible {
+  display: block;
+}
+
+.answer-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  font-size: 1.4rem;
+}
+
+.answer-text > :nth-child(2) {
+  padding-left: 2rem;
+}
+
+.line {
+  height: 1px;
+  width: 100%;
+  background-color: #ccc;
+  transition: transform 0.2s ease;
+  transform: translateY(0);
+}
+
+.answer.visible + .line {
+  transform: translateY(20px);
+}
+
+.questions h2 {
+  font-size: 1.8rem;
+  color: #f4f4f4;
+  margin-bottom: 2.4rem;
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: #1e1e22;
+  padding: 4.8rem;
+}
+
+.logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-text-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2.4rem;
+}
+
+.copyright {
+  font-size: 1.6rem;
+  color: #f4f4f4;
+}
+
+.footer-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.rules-link:link,
+.rules-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #f4f4f4;
+}
+
+.rules-link:active,
+.rules-link:hover {
+  color: #aaa;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  display: inline;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #fff;
+  padding: 1rem 3.5rem;
+  border-radius: 6px;
+  background-color: #00aef3;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  background-color: #fff;
+  color: #000;
+}
